@@ -9,7 +9,8 @@ class car :
     crawl_constant: float
     fuel_tank_capacity: float
     initial_fuel: float
-    fuel_consumption: float
+    fuel_consumption_rate: float
+    current_fuel: float
 
 
 @dataclass
@@ -17,6 +18,7 @@ class track :
     id : int
     type : str
     length_m: float
+    radius_m: float
 
 
 @dataclass
@@ -31,6 +33,7 @@ class tyres:
     cold_degradation: float
     light_rain_degradation: float
     heavy_rain_degradation: float
+    current_tyre_degradation: float
 
 
 @dataclass
